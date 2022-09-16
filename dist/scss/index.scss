@@ -1,0 +1,118 @@
+$sans : sans-serif;
+$nu : "Nunito";
+$w : 92vw;
+
+*,
+*::before,
+*::after{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family : $nu, $sans;
+    width : 92vw;
+}
+
+
+canvas {
+    position :fixed; 
+    top : 0;
+    left : 0;
+    width : 100vw;
+    height : 100vh;
+  }
+
+  main{ 
+    width : 100vw;
+    z-index : 99;
+    position : absolute;
+    color : #ffffff;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__top{
+        font-family : 'Permanent Marker', $sans;
+        text-shadow : 2px -1px #ff00c8;
+        padding : 0px 0px 14px 0px;
+    }
+
+    &__text {
+        width : $w;
+        font-family : $nu, $sans;
+        line-height : 1.2;
+    }
+
+    &__mid {
+        font-family : 'Permanent Marker', $sans;
+        padding : 10px;
+        text-shadow: -1px 2px #ff00c8;
+    }
+
+    
+    &__list{
+        width : $w;
+        font-family: $nu, $sans;
+        
+    }
+}
+
+.fav {
+    font-family : $nu, $sans;
+
+    &__list {
+        display : flex;
+        flex-direction : column;
+        align-items:center;
+    }
+        
+
+}
+
+.kali {
+    position : relative;
+    top :140vh;
+}
+
+.ubuntu {
+    position : relative;
+    top:220vh;
+}
+
+a {
+    text-decoration : none;
+    color : #ffff;
+
+    &:hover {
+        color : #fb0;
+        text-decoration: none;
+        font-weight : 600;
+
+    }
+} 
+
+
+
+::-webkit-scrollbar {
+
+    scroll-behavior: smooth;
+    
+    width : 0.5rem;
+
+    background : #12121285;
+
+    &-thumb {
+        border-radius: 11rem;
+        background-color : #e100ff;
+
+        &:hover {
+            background-color : #e100ff9f;
+        }
+    }
+    
+}

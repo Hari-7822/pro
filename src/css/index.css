@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  width: 92vw;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 100vw;
+  z-index: 99;
+  position: absolute;
+  color: #ffffff;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head__top {
+  font-family: "Permanent Marker", sans-serif;
+  text-shadow: 2px -1px #ff00c8;
+  padding: 0px 0px 14px 0px;
+}
+.head__text {
+  width: 92vw;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.2;
+}
+.head__mid {
+  font-family: "Permanent Marker", sans-serif;
+  padding: 10px;
+  text-shadow: -1px 2px #ff00c8;
+}
+.head__list {
+  width: 92vw;
+  font-family: "Nunito", sans-serif;
+}
+
+.fav {
+  font-family: "Nunito", sans-serif;
+}
+.fav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kali {
+  position: relative;
+  top: 140vh;
+}
+
+.ubuntu {
+  position: relative;
+  top: 220vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #fb0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+::-webkit-scrollbar {
+  scroll-behavior: smooth;
+  width: 0.5rem;
+  background: rgba(18, 18, 18, 0.5215686275);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 11rem;
+  background-color: #e100ff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(225, 0, 255, 0.6235294118);
+}

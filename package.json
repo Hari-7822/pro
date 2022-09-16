@@ -1,0 +1,19 @@
+{
+  "name": "pro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "scss" : "npx sass --watch dist/scss:src/css/ --no-source-map"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "sass": "^1.54.9",
+    "three": "^0.144.0"
+  }
+}
